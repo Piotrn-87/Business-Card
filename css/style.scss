@@ -109,3 +109,15 @@ body {
 .card:hover .person1 {
     transform: translateY(0);
 }
+
+.person1__socials-link {
+    background: linear-gradient(to right, #a18cd1, #fbc2eb, #a18cd1);
+    background-size: 200%;
+    border-radius: 1px;
+    padding: .5rem 1rem;
+    transition: .3s;
+}
+
+.person1__socials-link:hover {
+    background-position-x: 100%;
+}
