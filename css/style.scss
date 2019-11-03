@@ -22,65 +22,63 @@ body {
 
 .card {
     align-items: center;
-    background: #444;
     display: flex;
     border-radius: 2px;
     flex-direction: column;
     justify-content: space-between;
     max-width: 40rem;
-    padding: 1rem;
     position: relative;
 }
 
 .person {
-    // background: green;
-
-    &__contain {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: red;
-    }
-
-    &__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    align-items: center;
+    background: #444;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    position: relative;
+    transition: .3s;
+    transform: translateY(100px);
+    width: 40rem;
+    z-index: 2019;
 }
 
 .person__contain {
-    background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: .3;
 }
 
-.person__photo {
-    width: 100%;
-    margin-right: 2rem;
+.person__contain:hover {
+    opacity: 1;
 }
 
-.person__header {
-    margin-bottom: 1.5rem;
+.person__contain-image {
+    margin-top: 1.5rem;
 }
 
 .person__description {
-    text-align: justify;
-    line-height: 1.5rem;
+    color: cadetblue;
+    text-transform: uppercase;
 }
 
-.person__name {
-    margin: 0;
-    font-weight: normal;
-    font-size: 2rem;
+.card:hover .person {
+    background: #ff0057;
+    transform: translateY(0);
 }
 
-.person__position {
-    font-style: italic;
+.person1 {
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+    transform: translateY(-100px);
+    transition: .3s;
 }
 
-.person__link {
-    text-decoration: none;
-    color: #bf1363;
+.card:hover .person1 {
+    transform: translateY(0);
 }
