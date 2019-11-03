@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    align-items: center;
+    background: #777;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    align-items: center;
+    background: #444;
+    display: flex;
+    border-radius: 2px;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 40rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.person {
+    // background: green;
+
+    &__contain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: red;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.person__contain {
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person__photo {
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.person__header {
+    margin-bottom: 1.5rem;
+}
+
+.person__description {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.person__name {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.person__position {
+    font-style: italic;
+}
+
+.person__link {
+    text-decoration: none;
+    color: #bf1363;
+}
