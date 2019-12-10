@@ -26,6 +26,12 @@ body {
     min-height: 100vh;
 }
 
+@media (max-width: 641px) {
+    body {
+        align-items: flex-start;
+    }
+}
+
 .card {
     align-items: center;
     display: flex;
