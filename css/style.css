@@ -5,6 +5,12 @@ html {
     font-size: 16px;
 }
 
+@media (max-width: 641px) {
+    html {
+        font-size: 10px;
+    }
+}
+
 *,
 *:after,
 *:before {
@@ -30,6 +36,12 @@ body {
     position: relative;
 }
 
+@media (max-width: 641px) {
+    .card {
+        max-width: 30rem;
+    }
+}
+
 .person {
     align-items: center;
     background: #444;
@@ -42,6 +54,12 @@ body {
     transform: translateY(100px);
     width: 40rem;
     z-index: 2019;
+}
+
+@media (max-width: 641px) {
+    .person {
+        width: 30rem;
+    }
 }
 
 .person__contain {
@@ -57,9 +75,21 @@ body {
     margin-top: 1.5rem;
 }
 
+@media(max-width: 641px) {
+    .person__contain-image {
+        transform: scale(.7);
+    }
+}
+
 .person__description {
-    color: #222;
+    color: black;
     text-transform: uppercase;
+}
+
+@media (max-width: 641px) {
+    .person__description {
+        font-size: 12px;
+    }
 }
 
 .card:hover .person {
