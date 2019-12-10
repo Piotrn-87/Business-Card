@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 641px) {
     body {
-        align-items: flex-start;
+        padding-bottom: 10rem;
     }
 }
 
