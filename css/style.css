@@ -70,6 +70,15 @@ body {
 
 .person__contain {
     opacity: .3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.xxx {
+    position: absolute;
+    top: 0;
+    left: 1rem;
 }
 
 .person__contain:hover {
@@ -156,4 +165,50 @@ body {
 
 .person1__socials-link:hover {
     background-position-x: 100%;
+}
+
+.time {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+
+.time div {
+    position: relative;
+    margin: 0 0.2rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.time div span {
+    position: relative;
+    width: 3.2rem;
+    height: 3rem;
+    background: #2196f3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    z-index: 2020;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.time div span:nth-child(2) {
+    height: 1rem;
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+    display: none;
+}
+
+.time div:last-child span {
+    background: #ff006a;
+}
+
+.time div:last-child span:nth-child(2) {
+    background: #ec0062;
 }
