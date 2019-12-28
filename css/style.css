@@ -69,20 +69,12 @@ body {
 }
 
 .person__contain {
-    opacity: .3;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.xxx {
-    position: absolute;
-    top: 0;
-    left: 1rem;
-}
-
 .person__contain:hover {
-    opacity: 1;
     transition: .3s;
 }
 
