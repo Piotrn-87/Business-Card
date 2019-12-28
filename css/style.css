@@ -86,7 +86,7 @@ body {
     .person__contain-image {
         transform: scale(.7);
         position: relative;
-        top: 20%;
+        top: 15%;
     }
 }
 
