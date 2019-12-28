@@ -86,7 +86,7 @@ body {
     .person__contain-image {
         transform: scale(.7);
         position: relative;
-        top: 15%;
+        top: 20%;
     }
 }
 
@@ -168,13 +168,13 @@ body {
     left: 1%;
 }
 
-.time div {
+.time__box {
     position: relative;
     margin: 0 0.2rem;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
-.time div span {
+.time__box span {
     position: relative;
     width: 3.2rem;
     height: 3rem;
@@ -188,21 +188,10 @@ body {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-.time div span:nth-child(2) {
-    height: 1rem;
-    font-size: 0.5rem;
-    letter-spacing: 2px;
-    z-index: 9;
-    box-shadow: none;
-    background: #127fd6;
-    text-transform: uppercase;
-    display: none;
-}
-
-.time div:last-child span {
+.time__box:last-child span {
     background: #ff006a;
 }
 
-.time div:last-child span:nth-child(2) {
+.time__box:last-child span:nth-child(2) {
     background: #ec0062;
 }

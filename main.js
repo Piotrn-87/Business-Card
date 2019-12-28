@@ -1,9 +1,9 @@
 "use sctrict";
 
 function clock() {
-  const hours = document.querySelector(".hours");
-  const minutes = document.querySelector(".minutes");
-  const seconds = document.querySelector(".seconds");
+  const hours = document.querySelector(".time__box--hours");
+  const minutes = document.querySelector(".time__box--minutes");
+  const seconds = document.querySelector(".time__box--seconds");
 
   const timer = new Date();
 
