@@ -69,9 +69,9 @@ body {
 }
 
 .person__contain {
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .person__contain:hover {
@@ -141,11 +141,11 @@ body {
 }
 
 .person1__socials-link {
+  background: #444;
+  border: none;
   color: black;
   margin-left: 1rem;
-  background: #444;
   text-decoration: none;
-  border: none;
 }
 
 .card:hover .person1 {
@@ -153,45 +153,45 @@ body {
 }
 
 .person1__socials-link {
-  color: #21ebff;
-  position: relative;
   border-radius: 1px;
+  color: #21ebff;
+  letter-spacing: 2px;
+  overflow: hidden;
+  position: relative;
   padding: 0.5rem 1rem;
   transition: 0.4s;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  overflow: hidden;
 }
 
 .person1__socials-link:hover {
   background: #21ebff;
-  color: #222;
   box-shadow: 0 0 30px #21ebff;
+  color: #222;
   transition-delay: 0.4s;
 }
 
 .person1__socials-link:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
   border-top: 2px solid#21ebff;
   border-left: 2px solid #21ebff;
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
   transition: 0.4s;
+  width: 10px;
 }
 
 .person1__socials-link:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
   border-bottom: 2px solid#21ebff;
   border-right: 2px solid #21ebff;
+  bottom: 0;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: 0;
   transition: 0.4s;
+  width: 10px;
 }
 
 .person1__socials-link:hover:before {
@@ -206,29 +206,29 @@ body {
 
 .time {
   display: flex;
+  left: 1%;
   position: absolute;
   top: 5%;
-  left: 1%;
 }
 
 .time__box {
-  position: relative;
   margin: 0 0.2rem;
+  position: relative;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
 .time__box span {
-  position: relative;
-  width: 3.2rem;
-  height: 3rem;
+  align-items: center;
   background: #2196f3;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   color: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
+  height: 3rem;
+  justify-content: center;
+  position: relative;
+  width: 3.2rem;
   z-index: 2020;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .time__box:last-child span {
